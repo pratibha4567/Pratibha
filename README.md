@@ -106,7 +106,7 @@ Vdd=1.8V
 In above circuit need to get Vout=1.77V
 
 Introduction:
-In experiment 1 considered power by that got current value.Here also should consider same value.So
+In circuit 1 considered power by that got current value.Here also should consider same value.So
 Id=2.77×10^-5
 
 Circuit design:
@@ -119,22 +119,27 @@ As mentioned above first should consider DC sweep then select dc opt.
 Before that by trial and error method try to get near value for Id and Vout.
 Above criteria should be considered.
 
-![SAVE_20250217_231125](https://github.com/user-attachments/assets/d6154e8d-9537-464d-b676-7ab5f44b6fcd)
+![IMG-20250217-WA0020](https://github.com/user-attachments/assets/e098ef71-dcf7-48d5-8eca-4533c30b470a)
+
 
 
 Transient analysis:
-We should follow above conditions which are used for experiment 1 in V1.
+We should follow above conditions which are used for circuit 1 in V1.
 
-![SAVE_20250217_231225](https://github.com/user-attachments/assets/c49e9bc2-7c25-4c05-8121-f177a910325c)
+![IMG-20250217-WA0017](https://github.com/user-attachments/assets/4c2ab16b-5b9d-4832-b613-f10624ffe842)
 
-![IMG-20250214-WA0030](https://github.com/user-attachments/assets/e314749c-4a00-4dca-ad67-def831c7d604)
+![IMG-20250217-WA0022](https://github.com/user-attachments/assets/d2d7055e-ece1-43e9-9185-cc24086a4bba)
+
+
+
 
 AC analysis:
 For ac analysis should follow same steps.
-![IMG-20250214-WA0029](https://github.com/user-attachments/assets/af18f4a2-c02b-4b43-a1e3-684c83913bc3)
+![IMG-20250217-WA0021](https://github.com/user-attachments/assets/8fd6fe29-590d-4330-a3ab-6ac8f841b6be)
+
 
 Inference:
-
+Considering above circuit we can say that 
 
 
 
