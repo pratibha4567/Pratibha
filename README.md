@@ -14,6 +14,16 @@ Circuit design:
 
 ![1000140280](https://github.com/user-attachments/assets/39bc3cc1-c035-4277-9d42-45091b7362d1)
 
+
+
+| NMOS (L)  | NMOS (W) | Current (A)   |
+|-----------|---------|--------------|
+| 33 µm     | 30 µm  | 2.77279e⁻⁵   |
+| 34 µm     | 30 µm  | 2.69145e⁻⁵   |
+| 35 µm     | 32 µm  | 2.61475e⁻⁵   |
+| 35 µm     | 32 µm  | 2.78918e⁻⁵   |
+
+
 DC analysis:
 In the above circuit we know power and voltage by this calculate current 
 given power=50uW,Vdd=1.8V
@@ -126,6 +136,21 @@ Here some trial and error values
 | 180 nm    | 36 µm  | 39 µm     | 33 µm   | 2.58225e⁻⁵   |
 
 
+Calculation for Vb:
+to keep both transistor in saturation.
+Vth<Vin<Vout+Vth
+
+Vin-Vth <=Vout<= Vdd -Vb- |Vth|
+
+.9-.36<=Vout<= 1.8 -Vb- |.39|
+
+0.54<=Vout<= 1.41 -Vb
+
+0.54<=Vb=> -1.41 +Vout
+
+0.54<=Vb=> -1.41 +1.77
+
+0.54<=Vb=> 0.36
 
 
 
