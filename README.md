@@ -140,7 +140,9 @@ For ac analysis should follow same steps.
 
 
 Inference:
-Considering above circuit we can say that by
+Considering above circuit we can say that by This simulation tests a CMOS inverter circuit. A 1.8V power supply (V1) powers the circuit, while a sine wave input (V2) checks its response. A bias voltage (V3 = 0.4V) helps the transistors (M1 = NMOS, M2 = PMOS) switch states. 
+
+
 
 
 
