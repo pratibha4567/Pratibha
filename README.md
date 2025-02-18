@@ -111,7 +111,8 @@ Id=2.77×10^-5
 
 Circuit design:
 
-![IMG_20250217_230933](https://github.com/user-attachments/assets/ec6b02ff-607e-48b6-9124-9e818293f44a)
+![IMG_20250218_111324](https://github.com/user-attachments/assets/fffb21df-51a9-45ec-803f-7637f3511e75)
+
 
 
 DC analysis:
@@ -139,7 +140,7 @@ For ac analysis should follow same steps.
 
 
 Inference:
-Considering above circuit we can say that 
+Considering above circuit we can say that by
 
 
 
