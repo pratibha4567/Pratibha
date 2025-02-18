@@ -113,6 +113,25 @@ Circuit design:
 
 ![IMG_20250218_111324](https://github.com/user-attachments/assets/fffb21df-51a9-45ec-803f-7637f3511e75)
 
+Here some trial and error values 
+
+
+
+
+
+| PMOS (L)  | PMOS (W) | NMOS (L)  | NMOS (W) | Current (A)   |
+|-----------|---------|-----------|---------|--------------|
+| 180 nm    | 33 µm  | 39 µm     | 35 µm   | 2.73887e⁻⁵   |
+| 180 nm    | 35 µm  | 39 µm     | 34 µm   | 2.66056e⁻⁵   |
+| 180 nm    | 36 µm  | 39 µm     | 33 µm   | 2.58225e⁻⁵   |
+
+
+
+
+
+
+
+
 
 
 DC analysis:
