@@ -5,3 +5,5 @@ Aim: design and analyse the most differential amplifier circuit for the followin
 
 Introduction:
 A Differential Amplifier is an electronic circuit that takes two input signals and gives an output.
+
+The key concept of using differential amplifier is to 
