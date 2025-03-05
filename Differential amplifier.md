@@ -66,6 +66,7 @@ DC Analysis in LTSpice is used to find the voltage and current at different poin
 It shows the steady values without any time changes.
 
 Use it to check if your circuit is working properly before testing other signals.
+![IMG-20250305-WA0032](https://github.com/user-attachments/assets/a81a8691-ddaf-41ff-8f70-24bd99aaed3c)
 
 
 Transient analysis 
