@@ -61,6 +61,13 @@ Step 1: DC analysis
 ![IMG-20250305-WA0025](https://github.com/user-attachments/assets/8ad4c2e5-6c28-44e7-beaf-80ab53a6bec5)
 
 
+DC Analysis in LTSpice is used to find the voltage and current at different points in a circuit when a DC power supply is applied.
+
+It shows the steady values without any time changes.
+
+Use it to check if your circuit is working properly before testing other signals.
+
+
 Transient analysis 
 
 
