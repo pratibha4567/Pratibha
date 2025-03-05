@@ -102,6 +102,22 @@ It helps to see how the circuit behaves from start to end.
 
 Used for testing circuits with time-varying signals.
 
+For ac analysis 
+Type of sweep:decade. 
+No. of points per decade:20 
+start frequency:0.1
+stop frequency:1T
+
+![SAVE_20250306_242731](https://github.com/user-attachments/assets/6358e9f6-326e-4c4b-86f9-5f542f33aec6)
+
+![IMG-20250305-WA0016](https://github.com/user-attachments/assets/2b7daa8c-7a3c-4ee5-953e-5f2f426523d8)
+
+DC sweep:
+Vicm(min)=Vth+Vp=0.495+0.5=0.995V
+Vicm(max)=Vdd-Id1(Rd)+Vth=
+2.5-1.8(0.6)+0.495=1.915
+Average=1.455
+![Screenshot 2025-03-05 222348](https://github.com/user-attachments/assets/cae05e41-f13e-4e3f-bb6d-ac8eb11718df)
 
 
 
