@@ -7,3 +7,4 @@ Introduction:
 A Differential Amplifier is an electronic circuit that takes two input signals and gives an output.
 
 The key concept of using differential amplifier is to 
+![1000142672](https://github.com/user-attachments/assets/79548f11-8e74-4d3d-a4e4-f989c6e5dc57)
