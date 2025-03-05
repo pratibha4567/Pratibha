@@ -70,5 +70,41 @@ Use it to check if your circuit is working properly before testing other signals
 
 
 Transient analysis 
+It can be done by considering.
+
+Stop time:5m
+
+then put value for V1 select sine wave,
+
+dc offset:1.3V
+
+amplitude:50m
+
+frequency:1k
+Gain:
+Vopp=0.4696V
+Vipp=0.1009V
+Av=4.654
+
+Input signal:
+![IMG-20250305-WA0031](https://github.com/user-attachments/assets/8b14499b-9128-4ce1-b3da-01d35888b704)
+
+Output signal 
+![IMG-20250305-WA0033](https://github.com/user-attachments/assets/0efe013d-0b53-49db-ab35-9e67fe20cc1d)
+
+![IMG-20250305-WA0036](https://github.com/user-attachments/assets/43a4bc19-6785-4a51-9b1b-de6b580aab6f)
+
+
+AC analysis:
+Transient Analysis in LTSpice shows how voltages and currents change over time in a circuit when signals like AC or pulse are applied.
+
+It helps to see how the circuit behaves from start to end.
+
+Used for testing circuits with time-varying signals.
+
+
+
+
+
 
 
