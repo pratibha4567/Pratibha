@@ -1,6 +1,6 @@
 8# Linear integrated circuits 
 # Experiment 3
-#Circuit 1:
+# Circuit 1:
 
 Introduction:
 A Differential Amplifier is an electronic circuit that takes two input signals and gives an output.
@@ -124,13 +124,66 @@ Average=1.455V
 ![IMG-20250305-WA0063](https://github.com/user-attachments/assets/680e9e87-3eca-4ad6-9de6-101d7688eb6e)
 
 
-#Circuit 2:
+# Circuit 2:
+
 Here we are replacing resistor by current source.
+
 ![IMG_20250306_010929](https://github.com/user-attachments/assets/b8ff382b-7db4-4c72-ac42-0bd39a766371)
 
 DC analysis:
 
+![SAVE_20250306_242703](https://github.com/user-attachments/assets/b2b9864e-b2f7-413a-b572-f41b61826b72)
 
 
+Transient analysis:
+
+Gain=Vopp/Vipp=0.474/0.1004=4.721
+
+![SAVE_20250306_242725](https://github.com/user-attachments/assets/68009fbc-1cd5-4b4e-9f62-268d6c2d9435)
+
+AC analysis:
+
+![IMG-20250305-WA0059](https://github.com/user-attachments/assets/cdbe6c41-ff1e-4ebd-9285-930de0916d8b)
+
+![Screenshot 2025-03-05 222348](https://github.com/user-attachments/assets/84338683-427c-460a-bb2b-b2fb3fab409e)
+
+
+
+DC sweep:
+
+![IMG-20250305-WA0060](https://github.com/user-attachments/assets/7f502082-7b0d-4de6-8d75-020ae757c95e)
+
+
+# Circuit 3:
+Again we are replacing current source by nmos.
+Here we supply voltage for nmos 
+Vb=Vth+Vp
+Vb =0.495+0.5=0.995V
+
+DC analysis:
+
+We need to adjust dc operating points by adjusting nmos values.
+
+![IMG-20250305-WA0081](https://github.com/user-attachments/assets/9285db82-f9fd-415e-9de7-8776b2b523a3)
+
+![IMG-20250305-WA0076](https://github.com/user-attachments/assets/d8926182-7802-4083-9a63-f5dcc8f1735e)
+
+Transient analysis:
+Gain=0.4665/0.09913=4.705
+
+![IMG-20250305-WA0080](https://github.com/user-attachments/assets/086be759-74ff-41c4-81b0-0b2938a0d348)
+
+![IMG-20250305-WA0072](https://github.com/user-attachments/assets/cb8fc3fe-737a-4596-9801-1a585f52e726)
+
+AC analysis:
+
+![IMG-20250305-WA0082](https://github.com/user-attachments/assets/df264fd3-5229-44b7-be59-8c4a42be4cf5)
+
+
+DC Sweep:
+
+![IMG-20250305-WA0078](https://github.com/user-attachments/assets/0b27f97b-16e7-4004-910f-965cff72ddfd)
+
+Inference:
 
 
