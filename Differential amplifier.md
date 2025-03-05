@@ -1,5 +1,6 @@
 8# Linear integrated circuits 
 # Experiment 3
+#Circuit 1:
 
 Introduction:
 A Differential Amplifier is an electronic circuit that takes two input signals and gives an output.
@@ -115,10 +116,19 @@ stop frequency:1T
 DC sweep:
 Vicm(min)=Vth+Vp=0.495+0.5=0.995V
 Vicm(max)=Vdd-Id1(Rd)+Vth=
-2.5-1.8(0.6)+0.495=1.915
-Average=1.455
+2.5-1.8(0.6)+0.495=1.915V
+Average=1.455V
+
 ![Screenshot 2025-03-05 222348](https://github.com/user-attachments/assets/cae05e41-f13e-4e3f-bb6d-ac8eb11718df)
 
+![IMG-20250305-WA0063](https://github.com/user-attachments/assets/680e9e87-3eca-4ad6-9de6-101d7688eb6e)
+
+
+#Circuit 2:
+Here we are replacing resistor by current source.
+![IMG_20250306_010929](https://github.com/user-attachments/assets/b8ff382b-7db4-4c72-ac42-0bd39a766371)
+
+DC analysis:
 
 
 
