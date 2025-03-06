@@ -128,7 +128,8 @@ Average=1.455V
 
 Here we are replacing resistor by current source.
 
-![IMG_20250306_010929](https://github.com/user-attachments/assets/b8ff382b-7db4-4c72-ac42-0bd39a766371)
+![IMG_20250306_012036](https://github.com/user-attachments/assets/bc526a2b-e372-4b42-822c-8b63e5b8b597)
+
 
 DC analysis:
 
