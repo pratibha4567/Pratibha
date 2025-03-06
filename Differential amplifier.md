@@ -1,4 +1,4 @@
-8# Linear integrated circuits 
+# Linear integrated circuits 
 # Experiment 3
 # Circuit 1:
 
@@ -25,8 +25,7 @@ Output is measured between two output terminals.
 
 Better noise rejection compared to type 1.
 
-
-3. Double-Ended Input, Single-Ended Output
+3.Double-Ended Input, Single-Ended Output
 
 Two input signals are applied.
 
@@ -186,5 +185,6 @@ DC Sweep:
 ![IMG-20250305-WA0078](https://github.com/user-attachments/assets/0b27f97b-16e7-4004-910f-965cff72ddfd)
 
 Inference:
+The differential amplifier circuit is simulated successfully using LTSpice. It amplifies the difference between two input signals while rejecting common signals (noise). The output shows proper amplification with good accuracy. The circuit works linearly within the input range, proving its functionality.
 
 
