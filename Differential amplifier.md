@@ -48,7 +48,7 @@ The Double-Ended Input, Double-Ended Output type is the most commonly used in ad
 Aim: design differential amplifier for the following
 specification.Vdd=2.5V,P<=3mW
 Vicm=1.3V,Vocm=1.4V,Vp=0.5V. Perform DC analysis transient analysis and frequency response and extract the required parameters.
-![IMG-20250305-WA0028](https://github.com/user-attachments/assets/126d57e8-cc15-4ad5-a98d-6e41236dd6c3)
+
 
 Given that,
 P<=3mW
@@ -56,20 +56,22 @@ Iss=P/Vdd=1.2mA
 Id1=Id2=Iss/2=0.6mA
 Rd=Vdd-Vocm/Id1=1.833k ohm
 Rss=Vp/Iss=416.66ohm
+![IMG-20250310-WA0007](https://github.com/user-attachments/assets/08892298-9ee9-482f-b77c-7daec3264bfc)
 
 Step 1: DC analysis 
-![IMG-20250305-WA0025](https://github.com/user-attachments/assets/8ad4c2e5-6c28-44e7-beaf-80ab53a6bec5)
-
 
 DC Analysis in LTSpice is used to find the voltage and current at different points in a circuit when a DC power supply is applied.
 
 It shows the steady values without any time changes.
 
 Use it to check if your circuit is working properly before testing other signals.
-![IMG-20250305-WA0032](https://github.com/user-attachments/assets/a81a8691-ddaf-41ff-8f70-24bd99aaed3c)
+![IMG-20250310-WA0025](https://github.com/user-attachments/assets/fdf85428-8412-4006-b007-6261bf023ef8)
 
+![IMG-20250310-WA0029](https://github.com/user-attachments/assets/65349acf-4cea-45b2-978a-691ff759c2d7)
 
-Transient analysis 
+![IMG-20250310-WA0039](https://github.com/user-attachments/assets/3328becd-2538-43d4-8e51-2d18b66db2b7)
+
+Transient analysis:
 It can be done by considering.
 
 Stop time:5m
@@ -87,12 +89,18 @@ Vipp=0.1009V
 Av=4.654
 
 Input signal:
-![IMG-20250305-WA0031](https://github.com/user-attachments/assets/8b14499b-9128-4ce1-b3da-01d35888b704)
+![IMG-20250310-WA0024](https://github.com/user-attachments/assets/888d1179-cfc1-4176-8f13-f46f46eb487a)
+
+![IMG-20250310-WA0016](https://github.com/user-attachments/assets/82a9e9d5-1f9c-43ae-9b3f-50c12fb3dc23)
 
 Output signal 
-![IMG-20250305-WA0033](https://github.com/user-attachments/assets/0efe013d-0b53-49db-ab35-9e67fe20cc1d)
 
-![IMG-20250305-WA0036](https://github.com/user-attachments/assets/43a4bc19-6785-4a51-9b1b-de6b580aab6f)
+![IMG-20250310-WA0014](https://github.com/user-attachments/assets/db791fb4-26b9-4f5e-9f97-049375c181c3)
+
+![IMG-20250310-WA0021](https://github.com/user-attachments/assets/94da2b29-8641-4585-8811-e33a6d88c658)
+
+Combination of both input and output signal:
+![IMG-20250310-WA0034](https://github.com/user-attachments/assets/d8315050-553c-491f-a7de-5e70d1180f8e)
 
 
 AC analysis:
@@ -107,10 +115,33 @@ Type of sweep:decade.
 No. of points per decade:20 
 start frequency:0.1
 stop frequency:1T
+![IMG-20250310-WA0042](https://github.com/user-attachments/assets/52ebfd09-53f9-4bef-bcf7-b69243ded945)
+From the plot:
 
-![SAVE_20250306_242731](https://github.com/user-attachments/assets/6358e9f6-326e-4c4b-86f9-5f542f33aec6)
+The maximum gain appears to be around 13.5 dB.
 
-![IMG-20250305-WA0016](https://github.com/user-attachments/assets/2b7daa8c-7a3c-4ee5-953e-5f2f426523d8)
+The -3 dB point would be at 10.5 dB.
+
+
+Observing the graph:
+
+The lower cutoff frequency appears to be near 100 MHz.
+
+The upper cutoff frequency is around 1.75 GHz.
+
+
+Bandwidth Calculation:
+
+\text{Bandwidth} = \text{Upper cutoff frequency} - \text{Lower cutoff frequency}
+
+= 1.75 \text{ GHz} - 100 \text{ MHz} ]
+
+= 1.65 \text{ GHz}
+
+Final Answer:
+
+Bandwidth ≈ 1.65 GHz
+![IMG-20250310-WA0054](https://github.com/user-attachments/assets/a06d34a6-a86d-42ad-bc96-1319181009a9)
 
 DC sweep:
 Vicm(min)=Vth+Vp=0.495+0.5=0.995V
@@ -118,34 +149,74 @@ Vicm(max)=Vdd-Id1(Rd)+Vth=
 2.5-1.8(0.6)+0.495=1.915V
 Average=1.455V
 
-![Screenshot 2025-03-05 222348](https://github.com/user-attachments/assets/cae05e41-f13e-4e3f-bb6d-ac8eb11718df)
+![IMG-20250310-WA0013](https://github.com/user-attachments/assets/7850ea02-ee24-43f2-a1e0-50049a6ae5bd)
 
-![IMG-20250305-WA0063](https://github.com/user-attachments/assets/680e9e87-3eca-4ad6-9de6-101d7688eb6e)
 
 
 # Circuit 2:
 
 Here we are replacing resistor by current source.
 
-![IMG_20250306_012036](https://github.com/user-attachments/assets/bc526a2b-e372-4b42-822c-8b63e5b8b597)
+![IMG-20250310-WA0057](https://github.com/user-attachments/assets/f4f6d3a7-e175-4f3e-9a6a-c6cbdca94313)
+
+
+![IMG-20250310-WA0009](https://github.com/user-attachments/assets/63a7c5b4-5c0a-4613-bb37-9153d6b16089)
 
 
 DC analysis:
+![IMG-20250310-WA0058](https://github.com/user-attachments/assets/e70d4405-f639-4ad2-bea4-8219fb9ec628)
 
-![SAVE_20250306_242703](https://github.com/user-attachments/assets/b2b9864e-b2f7-413a-b572-f41b61826b72)
+![IMG-20250310-WA0020](https://github.com/user-attachments/assets/3c232765-cf66-4672-b097-a3985f81d8a3)
+
+
 
 
 Transient analysis:
 
 Gain=Vopp/Vipp=0.474/0.1004=4.721
 
-![SAVE_20250306_242725](https://github.com/user-attachments/assets/68009fbc-1cd5-4b4e-9f62-268d6c2d9435)
+Input waveform:
+![IMG-20250310-WA0026](https://github.com/user-attachments/assets/11583536-cbd8-46fa-8e47-dae5961f9cb7)
+
+![IMG-20250310-WA0011](https://github.com/user-attachments/assets/c93657d4-a459-4ba4-9b62-2004db8ee340)
+
+Output waveform:
+![IMG-20250310-WA0040](https://github.com/user-attachments/assets/7edb2b36-213b-4108-ac3f-b423e2e500e8)
+
+![IMG-20250310-WA0008](https://github.com/user-attachments/assets/2927f3a3-c935-4a92-8f6b-b212a0e0eb71)
+
+Combination of input and output waveform:
+![IMG-20250310-WA0012](https://github.com/user-attachments/assets/713d9f33-aac6-4469-bb22-3558870b839b)
+
+
+
 
 AC analysis:
 
-![IMG-20250305-WA0059](https://github.com/user-attachments/assets/cdbe6c41-ff1e-4ebd-9285-930de0916d8b)
+![IMG-20250310-WA0048(1)](https://github.com/user-attachments/assets/61d88597-29a0-499a-b33f-0759e9674f33)
 
-![Screenshot 2025-03-05 222348](https://github.com/user-attachments/assets/84338683-427c-460a-bb2b-b2fb3fab409e)
+Bandwidth for above plot:
+At 1.220 GHz, the gain is 13.620 dB.
+
+The -3 dB point (relative to the peak gain) should be around 10.62 dB.
+
+The lower cutoff frequency is still approximately 100 MHz.
+
+The upper cutoff frequency now appears to be around 1.22 GHz.
+
+
+Bandwidth Calculation:
+
+\text{Bandwidth} = \text{Upper cutoff frequency} - \text{Lower cutoff frequency}
+
+= 1.22 \text{ GHz} - 100 \text{ MHz} ]
+
+= 1.12 \text{ GHz}
+
+Final Answer:
+
+Bandwidth ≈ 1.12 GHz
+![IMG-20250310-WA0049](https://github.com/user-attachments/assets/faf3f222-3a57-4264-afe7-7b2cc30f62fc)
 
 
 
@@ -160,13 +231,14 @@ Here we supply voltage for nmos
 Vb=Vth+Vp
 Vb =0.495+0.5=0.995V
 
+![IMG-20250310-WA0046](https://github.com/user-attachments/assets/a3f161c1-2e7f-4cf2-912b-05258a256ae4)
+
 DC analysis:
 
 We need to adjust dc operating points by adjusting nmos values.
 
-![IMG-20250305-WA0081](https://github.com/user-attachments/assets/9285db82-f9fd-415e-9de7-8776b2b523a3)
 
-![IMG-20250305-WA0076](https://github.com/user-attachments/assets/d8926182-7802-4083-9a63-f5dcc8f1735e)
+
 
 Transient analysis:
 Gain=0.4665/0.09913=4.705
