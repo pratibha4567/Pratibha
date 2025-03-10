@@ -99,7 +99,18 @@ Output signal
 
 ![IMG-20250310-WA0021](https://github.com/user-attachments/assets/94da2b29-8641-4585-8811-e33a6d88c658)
 
-Combination of both input and output signal:
+Calculation of gain from above plot:
+
+Gain Calculation
+
+Obtained values:
+Vout(p-p)=1.6348-1.1683=0.4665
+Vin(p-p)=1.3494-1.2506=0.0988
+
+Gain=0.4665/0.0988=4.72
+
+Considering both input and output signal:
+
 ![IMG-20250310-WA0034](https://github.com/user-attachments/assets/d8315050-553c-491f-a7de-5e70d1180f8e)
 
 
@@ -115,7 +126,9 @@ Type of sweep:decade.
 No. of points per decade:20 
 start frequency:0.1
 stop frequency:1T
+
 ![IMG-20250310-WA0042](https://github.com/user-attachments/assets/52ebfd09-53f9-4bef-bcf7-b69243ded945)
+
 From the plot:
 
 The maximum gain appears to be around 13.5 dB.
@@ -141,6 +154,7 @@ Bandwidth Calculation:
 Final Answer:
 
 Bandwidth ≈ 1.65 GHz
+
 ![IMG-20250310-WA0054](https://github.com/user-attachments/assets/a06d34a6-a86d-42ad-bc96-1319181009a9)
 
 DC sweep:
@@ -151,11 +165,26 @@ Average=1.455V
 
 ![IMG-20250310-WA0013](https://github.com/user-attachments/assets/7850ea02-ee24-43f2-a1e0-50049a6ae5bd)
 
+Inference:
 
 
 # Circuit 2:
 
-Here we are replacing resistor by current source.
+
+Here we are replacing resistor by current source. Because of following some reasons.
+
+Replacing R3 (resistor) with a current source improves the circuit by:
+
+1. Better Biasing Stability – A current source provides a stable bias, unlike a resistor.
+
+
+2. Higher Gain – The high output impedance of a current source increases gain.
+
+
+3. Improved Linearity – Reduces voltage variations and enhances signal accuracy.
+
+
+4. Better Common-Mode Rejection – Reduces noise in differential circuits.
 
 ![IMG-20250310-WA0057](https://github.com/user-attachments/assets/f4f6d3a7-e175-4f3e-9a6a-c6cbdca94313)
 
@@ -173,7 +202,7 @@ DC analysis:
 
 Transient analysis:
 
-Gain=Vopp/Vipp=0.474/0.1004=4.721
+
 
 Input waveform:
 ![IMG-20250310-WA0026](https://github.com/user-attachments/assets/11583536-cbd8-46fa-8e47-dae5961f9cb7)
@@ -185,7 +214,14 @@ Output waveform:
 
 ![IMG-20250310-WA0008](https://github.com/user-attachments/assets/2927f3a3-c935-4a92-8f6b-b212a0e0eb71)
 
-Combination of input and output waveform:
+Calculation of Gain:
+Gain=Vout(p-p)/Vin(p-p)
+=1.6368-1.632/1.3496-1.2506
+=4.78
+
+
+
+Considering both input and output waveform:
 ![IMG-20250310-WA0012](https://github.com/user-attachments/assets/713d9f33-aac6-4469-bb22-3558870b839b)
 
 
@@ -216,13 +252,15 @@ Bandwidth Calculation:
 Final Answer:
 
 Bandwidth ≈ 1.12 GHz
+
 ![IMG-20250310-WA0049](https://github.com/user-attachments/assets/faf3f222-3a57-4264-afe7-7b2cc30f62fc)
 
 
 
 DC sweep:
 
-![IMG-20250305-WA0060](https://github.com/user-attachments/assets/7f502082-7b0d-4de6-8d75-020ae757c95e)
+![IMG-20250310-WA0012(1)](https://github.com/user-attachments/assets/70d3ed82-aac6-4e08-8c5e-5c288099efef)
+
 
 
 # Circuit 3:
@@ -233,28 +271,74 @@ Vb =0.495+0.5=0.995V
 
 ![IMG-20250310-WA0046](https://github.com/user-attachments/assets/a3f161c1-2e7f-4cf2-912b-05258a256ae4)
 
+![IMG-20250310-WA0043](https://github.com/user-attachments/assets/014f4902-1114-42aa-ba95-24fc7452661e)
+
 DC analysis:
 
 We need to adjust dc operating points by adjusting nmos values.
 
+![IMG_20250310_172602](https://github.com/user-attachments/assets/ff7a89d4-81d5-4ef2-a897-8e09b330d1db)
 
+![IMG-20250310-WA0015](https://github.com/user-attachments/assets/6e6fde78-0d47-4dcb-b8ad-241dca6a77e2)
 
 
 Transient analysis:
-Gain=0.4665/0.09913=4.705
 
-![IMG-20250305-WA0080](https://github.com/user-attachments/assets/086be759-74ff-41c4-81b0-0b2938a0d348)
 
-![IMG-20250305-WA0072](https://github.com/user-attachments/assets/cb8fc3fe-737a-4596-9801-1a585f52e726)
+Input waveform:
+![IMG-20250310-WA0044](https://github.com/user-attachments/assets/607ca5d4-8283-44fa-8b43-44df89227efe)
+
+
+![IMG-20250310-WA0018](https://github.com/user-attachments/assets/e944f013-f238-42e0-8ebc-0abf7bd3ae1a)
+
+Output waveform:
+
+![IMG-20250310-WA0019](https://github.com/user-attachments/assets/71084c2a-cdeb-4167-96d6-33c68268c544)
+
+
+![IMG-20250310-WA0022](https://github.com/user-attachments/assets/3bcac722-7e67-4b49-aff5-1a991f52044d)
+Gain=Vout(pp)/Vin(pp)
+=1.6327-1.1673/1.3494-1.2504
+=4.701
+
+Considering both input and output:
+
+![IMG-20250310-WA0035](https://github.com/user-attachments/assets/a3a932f9-3078-44a2-b7bd-7753e06d2786)
+
+
 
 AC analysis:
 
-![IMG-20250305-WA0082](https://github.com/user-attachments/assets/df264fd3-5229-44b7-be59-8c4a42be4cf5)
+![IMG-20250310-WA0050(1)](https://github.com/user-attachments/assets/31f0ed4a-98f8-482b-b31d-e5efd014891e)
+
+At 1.750 GHz, the gain is 13.508 dB.
+
+The -3 dB point (relative to the peak gain) should be around 10.5 dB.
+
+The lower cutoff frequency remains approximately 100 MHz.
+
+The upper cutoff frequency appears to be 1.75 GHz.
+
+
+Bandwidth Calculation:
+
+\text{Bandwidth} = \text{Upper cutoff frequency} - \text{Lower cutoff frequency}
+
+= 1.75 \text{ GHz} - 100 \text{ MHz} ]
+
+= 1.65 \text{ GHz}
+
+Final Answer:
+
+Bandwidth ≈ 1.65 GHz
+
+![IMG-20250310-WA0053](https://github.com/user-attachments/assets/453ed5f2-82c2-4112-ba8c-e32d0e493ad2)
 
 
 DC Sweep:
 
-![IMG-20250305-WA0078](https://github.com/user-attachments/assets/0b27f97b-16e7-4004-910f-965cff72ddfd)
+![IMG-20250310-WA0030](https://github.com/user-attachments/assets/7de78f54-31e2-4c92-924d-81bb5f2a46d9)
+
 
 Inference:
 The differential amplifier circuit is simulated successfully using LTSpice. It amplifies the difference between two input signals while rejecting common signals (noise). The output shows proper amplification with good accuracy. The circuit works linearly within the input range, proving its functionality.
