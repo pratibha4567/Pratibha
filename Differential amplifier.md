@@ -8,7 +8,7 @@ A Differential Amplifier is an electronic circuit that takes two input signals a
 The key concept of using differential amplifier is to reduce noise signal in audio systems, sensors, and communication circuits.
 There are mainly 4 types of Differential Amplifiers based on their input and output configuration:
 
-1. Single-Ended Input, Single-Ended Output
+1.Single-Ended Input, Single-Ended Output
 
 One input signal is applied, and the other input is grounded.
 
@@ -17,13 +17,14 @@ Output is measured at one terminal.
 Simple design, but less noise rejection.
 
 
-2. Single-Ended Input, Double-Ended Output
+2.Single-Ended Input, Double-Ended Output
 
 One input signal is applied, and the other input is grounded.
 
 Output is measured between two output terminals.
 
 Better noise rejection compared to type 1.
+
 
 3.Double-Ended Input, Single-Ended Output
 
@@ -34,7 +35,7 @@ Output is measured at one terminal.
 Commonly used in operational amplifiers.
 
 
-4. Double-Ended Input, Double-Ended Output
+4.Double-Ended Input, Double-Ended Output
 
 Two input signals are applied.
 
@@ -44,6 +45,7 @@ Best noise rejection and accuracy.
 
 
 The Double-Ended Input, Double-Ended Output type is the most commonly used in advanced applications like sensors and audio systems.
+
 
 Aim: design differential amplifier for the following
 specification.Vdd=2.5V,P<=3mW
@@ -145,11 +147,11 @@ The upper cutoff frequency is around 1.75 GHz.
 
 Bandwidth Calculation:
 
-\text{Bandwidth} = \text{Upper cutoff frequency} - \text{Lower cutoff frequency}
+Bandwidth= Upper cutoff frequency - Lower cutoff frequency
 
-= 1.75 \text{ GHz} - 100 \text{ MHz} ]
+= 1.75  GHz - 100  MHz
 
-= 1.65 \text{ GHz}
+= 1.65 GHz
 
 Final Answer:
 
@@ -159,13 +161,17 @@ Bandwidth ≈ 1.65 GHz
 
 DC sweep:
 Vicm(min)=Vth+Vp=0.495+0.5=0.995V
+
 Vicm(max)=Vdd-Id1(Rd)+Vth=
+
 2.5-1.8(0.6)+0.495=1.915V
+
 Average=1.455V
 
 ![IMG-20250310-WA0013](https://github.com/user-attachments/assets/7850ea02-ee24-43f2-a1e0-50049a6ae5bd)
 
 Inference:
+This circuit is basically a differential amplifier built using CMOS transistors. Its main job is to amplify the difference between two input signals while ignoring any noise that’s common to both. The resistors play a key role in controlling the gain and shaping how the circuit responds. Since it uses AC signal sources, it’s likely designed for small-signal applications, meaning it’s useful in situations where you need to process weak signals without letting noise interfere too much
 
 
 # Circuit 2:
@@ -198,11 +204,7 @@ DC analysis:
 ![IMG-20250310-WA0020](https://github.com/user-attachments/assets/3c232765-cf66-4672-b097-a3985f81d8a3)
 
 
-
-
 Transient analysis:
-
-
 
 Input waveform:
 ![IMG-20250310-WA0026](https://github.com/user-attachments/assets/11583536-cbd8-46fa-8e47-dae5961f9cb7)
@@ -243,11 +245,12 @@ The upper cutoff frequency now appears to be around 1.22 GHz.
 
 Bandwidth Calculation:
 
-\text{Bandwidth} = \text{Upper cutoff frequency} - \text{Lower cutoff frequency}
+Bandwidth= Upper cutoff frequency- 
+Lower cutoff frequency
 
-= 1.22 \text{ GHz} - 100 \text{ MHz} ]
+= 1.22  GHz- 100 MHz
 
-= 1.12 \text{ GHz}
+= 1.12  GHz
 
 Final Answer:
 
@@ -259,12 +262,29 @@ Bandwidth ≈ 1.12 GHz
 
 DC sweep:
 
-![IMG-20250310-WA0012(1)](https://github.com/user-attachments/assets/70d3ed82-aac6-4e08-8c5e-5c288099efef)
+![IMG-20250310-WA0017(1)](https://github.com/user-attachments/assets/2f6c53ea-0268-4278-b873-cd1d8db61c81)
 
+
+Inference:
+The current source in the circuit ensures stable biasing, improves gain, enhances efficiency, and provides better performance in high-frequency applications.
 
 
 # Circuit 3:
 Again we are replacing current source by nmos.
+
+The reason for replacing the current source with a CMOS transistor is likely to improve the circuit's performance in terms of gain, stability, and integration. Here are the key reasons:
+
+1. Gain Improvement: CMOS transistors provide higher output resistance, enhancing gain.
+
+2.Biasing Control: Allows better control over operating points compared to a fixed current source.
+
+3.Integration: CMOS devices are easier to integrate into modern IC designs.
+
+4.Power Efficiency: Reduces power consumption while maintaining performance.
+
+5.Active Load Function: Acts as an active load, improving circuit characteristics.
+
+
 Here we supply voltage for nmos 
 Vb=Vth+Vp
 Vb =0.495+0.5=0.995V
@@ -322,11 +342,11 @@ The upper cutoff frequency appears to be 1.75 GHz.
 
 Bandwidth Calculation:
 
-\text{Bandwidth} = \text{Upper cutoff frequency} - \text{Lower cutoff frequency}
+Bandwidth= Upper cutoff frequency- Lower cutoff frequency
 
-= 1.75 \text{ GHz} - 100 \text{ MHz} ]
+= 1.75  GHz- 100 MHz 
 
-= 1.65 \text{ GHz}
+= 1.65  GHz
 
 Final Answer:
 
@@ -339,7 +359,7 @@ DC Sweep:
 
 ![IMG-20250310-WA0030](https://github.com/user-attachments/assets/7de78f54-31e2-4c92-924d-81bb5f2a46d9)
 
-
+Infernce:
 Inference:
 The differential amplifier circuit is simulated successfully using LTSpice. It amplifies the difference between two input signals while rejecting common signals (noise). The output shows proper amplification with good accuracy. The circuit works linearly within the input range, proving its functionality.
 
