@@ -360,7 +360,6 @@ DC Sweep:
 ![IMG-20250310-WA0030](https://github.com/user-attachments/assets/7de78f54-31e2-4c92-924d-81bb5f2a46d9)
 
 Infernce:
-Inference:
-The differential amplifier circuit is simulated successfully using LTSpice. It amplifies the difference between two input signals while rejecting common signals (noise). The output shows proper amplification with good accuracy. The circuit works linearly within the input range, proving its functionality.
+The circuit is replaced by a current source to ensure stable biasing, increase gain by providing high output impedance, improve power efficiency, and enhance overall performance in analog applications.
 
 
